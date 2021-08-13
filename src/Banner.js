@@ -31,9 +31,9 @@ export default function Banner() {
             <div className="banner-contents">
                 <h1 className="banner-title">{movie?.title || movie?.name || movie?.original_name}</h1>
                 <div className="banner-buttons">
-                    <a href='https://www.youtube.com/' target="_blank" className="banner-button">Find YouTube Trailer</a>
+                <a href={`https://www.youtube.com/results?search_query=trailer+${movie?.title || movie?.name || movie?.original_name}`} target="_blank" className="banner-button">Find YouTube Trailer</a>
                 </div>
-                <h2 className="banner-description">{truncate(movie?.overview,150)}</h2>
+                <h2 className="banner-description">{truncate(movie?.overview,300)}</h2>
             </div>
             </div>
         </header>

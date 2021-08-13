@@ -2,6 +2,9 @@ import React from 'react';
 import './Banner.css';
 
 export default function Info({name, description, image}) {
+    function truncate(str, n){
+        return str?.length > n ? str.substr(0, n-1) + '...' : str;
+    }
     return (
         <div className="banner"
         style={{
@@ -19,7 +22,7 @@ export default function Info({name, description, image}) {
                         <a href={`https://www.youtube.com/results?search_query=trailer+${name}`} target="_blank" className="banner-button">Find YouTube Trailer</a>
                         
                     </div>
-                    <h2 className="banner-description">{description}</h2>
+                    <h2 className="banner-description">{truncate(description,300)}</h2>
                 </div>
             </div>    
         </div>
