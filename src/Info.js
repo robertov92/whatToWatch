@@ -22,7 +22,7 @@ export default function Info({name, description, image}) {
                         <a href={`https://www.youtube.com/results?search_query=trailer+${name}`} target="_blank" className="banner-button">Find YouTube Trailer</a>
                         
                     </div>
-                    <h2 className="banner-description">{truncate(description,300)}</h2>
+                    <h2 className="banner-description">{truncate(description,400)}</h2>
                 </div>
             </div>    
         </div>

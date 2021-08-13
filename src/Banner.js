@@ -33,7 +33,7 @@ export default function Banner() {
                 <div className="banner-buttons">
                 <a href={`https://www.youtube.com/results?search_query=trailer+${movie?.title || movie?.name || movie?.original_name}`} target="_blank" className="banner-button">Find YouTube Trailer</a>
                 </div>
-                <h2 className="banner-description">{truncate(movie?.overview,300)}</h2>
+                <h2 className="banner-description">{truncate(movie?.overview,400)}</h2>
             </div>
             </div>
         </header>
